@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/jwt_security #?connectionTimeZone=UTC #change this to your database url
+    password:  #change this to your database username
+    username: root #change this to your database password
+  jpa:
+    show-sql: true
+    hibernate:
+      jdbc:
+        time_zone: UTC #To fix wampp server error on Africa's time Zone
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
